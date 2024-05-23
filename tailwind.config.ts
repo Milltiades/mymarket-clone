@@ -18,6 +18,10 @@ const config = {
       },
     },
     extend: {
+      backgroundImage: {
+        'ad-m2': "url('/ad/m2.jpg')",
+        
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

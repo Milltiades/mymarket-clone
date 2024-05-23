@@ -16,7 +16,7 @@ export default async function PrivatePage() {
     <>
       <p>Hello {data.user.email}</p>
 
-      <Link href={"/"}>Home Page</Link>
+      <Link href={"/"}>Go to home page</Link>
     </>
   );
 }

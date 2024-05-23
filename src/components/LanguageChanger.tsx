@@ -23,7 +23,7 @@ const LanguageChanger = () => {
       //   router.push(pathname.replace(localActive, `${val}`));
       // }}
       >
-        <SelectTrigger className=" w-[120px] h-[35px] mr-[10px] focus:outline-none ">
+        <SelectTrigger className=" w-[140px] h-[40px] mr-[10px] focus:outline-none py-3 px-4 ">
           <SelectValue placeholder={"English"} />
         </SelectTrigger>
         <SelectContent className="w-[120px]  mt-[8px] h-[114px] flex flex-col py-[8px]">

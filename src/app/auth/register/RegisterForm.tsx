@@ -30,6 +30,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { useToast } from "@/components/ui/use-toast";
 
 const formSchema = z
   .object({
@@ -99,6 +100,8 @@ const RegisterForm = () => {
     },
   });
 
+  const { toast } = useToast();
+
   const onSubmit = async (data: z.infer<typeof formSchema>) => {
     try {
       const result = await signUp(data);
@@ -107,6 +110,9 @@ const RegisterForm = () => {
       console.log("result:", error);
       if (!error) {
         console.log("Registration Successful");
+        toast({
+          description: "Registration Successful",
+        });
       }
     } catch (error) {
       console.log(error);
