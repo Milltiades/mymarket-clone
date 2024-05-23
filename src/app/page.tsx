@@ -6,6 +6,9 @@ import { login } from "./auth/login/actions";
 import Link from "next/link";
 import Navbar from "@/components/navbar/Navbar";
 import Advertisement from "@/components/ad/Advertisement";
+import SearchComponent from "@/components/search/SearchComponent";
+import CategorySlider from "@/components/category/CategorySlider";
+import SuperVip from "@/components/superVip/SuperVip";
 
 export default function Home() {
   return (
@@ -72,6 +75,9 @@ export default function Home() {
         </div>
       </div> */}
       <Navbar />
+      <SearchComponent />
+      <CategorySlider />
+      <SuperVip />
     </div>
   );
 }
